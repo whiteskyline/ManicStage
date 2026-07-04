@@ -1,10 +1,10 @@
 # ManicStage
 
-ManicStage is a native macOS app for syncing music to older Sony Walkman devices that use the `OMGAUDIO` library structure, especially the Sony NW-S705F / S705 generation.
+ManicStage is a native macOS app for syncing music to older Sony Walkman devices that use the `OMGAUDIO` library structure, including verified S, E, and A series SonicStage-era devices.
 
 It is meant to restore the basic music-syncing workflow that used to depend on SonicStage, while running on modern macOS.
 
-ManicStage is **not** a general-purpose music player. It is **not** a modern Walkman manager. Its first target is the S705 / S600 / S700 era of Sony `OMGAUDIO` devices.
+ManicStage is **not** a general-purpose music player. It is **not** a modern Walkman manager. Its first target is SonicStage-era Sony `OMGAUDIO` Walkman devices that have been verified or can be safely tested with a full backup.
 
 ## Important: back up your Walkman first
 
@@ -22,6 +22,32 @@ This matters because older `OMGAUDIO` devices rely on multiple database files, i
 - Apple Silicon Mac, M-series chip
 - A Sony Walkman that mounts as a USB storage device and uses the `OMGAUDIO` library structure
 - FFmpeg / FFprobe installed locally if you want ManicStage to transcode unsupported audio formats
+
+## Device support
+
+ManicStage primarily targets Sony Walkman devices that use the `OMGAUDIO` music library structure and originally depended on SonicStage for music transfer.
+
+Verified devices:
+
+- NW-S700 series
+- NW-S600 series
+- NW-E300 series
+- NW-E400 series
+- NW-E500 series
+- NW-A600 series
+
+Other Sony Walkman devices that require SonicStage for music syncing are theoretically supported, but they should be treated as unverified until tested.
+
+If you try ManicStage with an unverified SonicStage-era Walkman, back up the entire Walkman USB root directory first, then verify the result on the device.
+
+If you try ManicStage with another `OMGAUDIO` Walkman, please report:
+
+- Device model
+- macOS version
+- Whether the device was detected
+- Whether import, delete, sync, playback, search, and cover display worked
+- Whether the device entered Simple Mode
+
 
 ## What ManicStage does
 
@@ -144,31 +170,6 @@ Then check the device itself:
 - Cover display
 
 If the device shows **Simple Mode**, it is usually not a fatal problem. Simple Mode means some advanced search features, such as Genre Search or Release Year Search, may be unavailable, but basic playback can still work.
-
-## Device support
-
-ManicStage primarily targets Sony Walkman devices that use the `OMGAUDIO` music library structure and originally depended on SonicStage for music transfer.
-
-Verified devices:
-
-- NW-S700 series
-- NW-S600 series
-- NW-E300 series
-- NW-E400 series
-- NW-E500 series
-- NW-A600 series
-
-Other Sony Walkman devices that require SonicStage for music syncing are theoretically supported, but they should be treated as unverified until tested.
-
-If you try ManicStage with an unverified SonicStage-era Walkman, back up the entire Walkman USB root directory first, then verify the result on the device.
-
-If you try ManicStage with another `OMGAUDIO` Walkman, please report:
-
-- Device model
-- macOS version
-- Whether the device was detected
-- Whether import, delete, sync, playback, search, and cover display worked
-- Whether the device entered Simple Mode
 
 ## Known limits
 
