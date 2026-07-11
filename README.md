@@ -1,6 +1,6 @@
 # ManicStage - Sony Walkman sync for macOS
 
-ManicStage is a native macOS music sync app for older Sony Walkman players that use the `OMGAUDIO` library structure. It is designed as a modern Mac workflow for SonicStage-era Walkman devices, including Sony NW-S600, NW-S700, NW-E300, NW-E400, NW-E500, and NW-A600 series players.
+ManicStage is a native macOS music sync app for older Sony Walkman players that use the `OMGAUDIO` library structure. It is designed as a modern Mac workflow for SonicStage / OpenMG-era Walkman devices, including Sony NW-S, NW-E, NW-A, NW-HD, and NW-MS series players that originally depended on Sony software for music transfer.
 
 If you are looking for a SonicStage alternative for Mac, a Sony Walkman `OMGAUDIO` manager, or a way to import and delete music on classic Sony Walkman devices from macOS, ManicStage is built for that specific problem.
 
@@ -18,6 +18,9 @@ ManicStage may be useful if you are searching for:
 - Sony NW-S705F / NW-S706F / NW-S700 music sync
 - Sony NW-E300 / NW-E400 / NW-E500 music transfer
 - Sony NW-A600 Walkman sync for Mac
+- Sony NW-HD1 / NW-HD3 / NW-HD5 SonicStage transfer
+- Sony NW-A1000 / NW-A3000 / NW-A805 SonicStage alternative
+- Sony NW-MS70D / NW-MS90D OpenMG / SonicStage transfer
 - Import music to old Sony Walkman without SonicStage
 - Delete songs from SonicStage-era Walkman on Mac
 - 索尼 Walkman 同步工具
@@ -72,7 +75,7 @@ This matters because older `OMGAUDIO` devices rely on multiple database files, i
 
 ## Device support
 
-ManicStage primarily targets Sony Walkman devices that use the `OMGAUDIO` music library structure and originally depended on SonicStage for music transfer.
+ManicStage primarily targets Sony Walkman devices that use the `OMGAUDIO` music library structure and originally depended on SonicStage, CONNECT Player, or OpenMG-era Sony software for music transfer.
 
 Verified devices:
 
@@ -83,7 +86,7 @@ Verified devices:
 - Sony Walkman NW-E500 series
 - Sony Walkman NW-A600 series
 
-Other Sony Walkman devices that require SonicStage for music syncing are theoretically supported, but they should be treated as unverified until tested.
+Other Sony Walkman devices that require SonicStage/OpenMG-style music syncing may work if they use a compatible `OMGAUDIO` library layout, but they should be treated as unverified until tested.
 
 If you try ManicStage with an unverified SonicStage-era Walkman, back up the entire Walkman USB root directory first, then verify the result on the device.
 
@@ -102,8 +105,41 @@ If you try ManicStage with another `OMGAUDIO` Walkman, please report:
 | Sony NW-S700 / NW-S600 Walkman | Verified | Main target for ManicStage. Tested around S705-era `OMGAUDIO` behavior. |
 | Sony NW-E300 / NW-E400 / NW-E500 Walkman | Verified | SonicStage-era devices using compatible `OMGAUDIO` library data. |
 | Sony NW-A600 Walkman | Verified | Uses the same general `OMGAUDIO` sync family. |
+| Sony NW-E000 / NW-E010 Walkman | Likely compatible | SonicStage-era USB-stick style models; please test with a full backup. |
+| Sony NW-S200 / NW-S610 / NW-S710 Walkman | Likely compatible | SonicStage-era sports and compact S-series models; please test before relying on it. |
+| Sony NW-A800 / NW-A900 / NW-A1000 / NW-A3000 Walkman | Experimental | SonicStage/CONNECT Player-era A-series models; database behavior may differ. |
+| Sony NW-HD hard disk Walkman | Experimental | SonicStage-era hard disk models; not the main test target yet. |
+| Sony NW-MS Memory Stick Walkman | Experimental | Earlier OpenMG/SonicStage-era models; may need different media behavior. |
 | Other SonicStage-era `OMGAUDIO` Walkman models | Experimental | Full device backup required before testing. |
 | Modern Android / drag-and-drop Walkman models | Not a target | Use the normal file-transfer workflow instead. |
+
+### SonicStage / OpenMG-era model index
+
+The following model names are included here so people searching for a SonicStage alternative, Sony Walkman transfer tool, or OpenMG / `OMGAUDIO` sync utility can find this project. Not every model below has been physically verified with ManicStage yet.
+
+| Family | Model names people may search for |
+| --- | --- |
+| NW-MS Memory Stick Walkman | NW-MS7, NW-MS9, NW-MS10, NW-MS11, NW-MS70D, NW-MS77DR, NW-MS90D |
+| NW-HD hard disk Walkman | NW-HD1, NW-HD2, NW-HD3, NW-HD5 |
+| NW-A600 series | NW-A605, NW-A607, NW-A608 |
+| NW-A1000 / NW-A3000 series | NW-A1000, NW-A1200, NW-A3000 |
+| NW-A800 series | NW-A805, NW-A806, NW-A808 |
+| NW-A900 series | NW-A916, NW-A918, NW-A919 |
+| NW-E early flash series | NW-E2, NW-E3, NW-E5, NW-E7, NW-E8P, NW-E10 |
+| NW-E50 / E70 / E90 series | NW-E55, NW-E73, NW-E75, NW-E95, NW-E99 |
+| NW-E100 series | NW-E103, NW-E105, NW-E105PS, NW-E107 |
+| NW-E200 / E300 series | NW-E205, NW-E207, NW-E305, NW-E307 |
+| NW-E400 series | NW-E403, NW-E405, NW-E407 |
+| NW-E500 series | NW-E503, NW-E505, NW-E507 |
+| NW-E000 series | NW-E002, NW-E003, NW-E005, NW-E002F, NW-E003F, NW-E005F |
+| NW-E010 series | NW-E013, NW-E015, NW-E016, NW-E013F, NW-E015F, NW-E016F |
+| NW-S200 series | NW-S202, NW-S203F, NW-S205F |
+| NW-S600 series | NW-S603, NW-S605 |
+| NW-S700 series | NW-S703F, NW-S705F, NW-S706F |
+| NW-S610 series | NW-S615F, NW-S616F, NW-S618F |
+| NW-S710 series | NW-S715F, NW-S716F, NW-S718F |
+
+Models with `NWZ-` prefixes and later drag-and-drop Walkman players are generally outside ManicStage's target scope.
 
 
 ## What ManicStage does
@@ -376,11 +412,18 @@ Common related searches include:
 - Sony Walkman music manager for Mac
 - Sony Walkman Mac music transfer
 - Sony Walkman SonicStage alternative
+- Sony Walkman OpenMG alternative
 - SonicStage alternative macOS
 - SonicStage replacement Mac
+- SonicStage replacement for Sony Walkman
 - SonicStage not working on modern macOS
+- Sony Walkman needs SonicStage
+- Sony Walkman songs not showing after copy
+- Sony Walkman cannot play files copied with Finder
+- Sony Walkman cannot play files copied with Windows Explorer
 - OMGAUDIO sync tool
 - OMGAUDIO database manager
+- OpenMG Jukebox alternative
 - old Sony Walkman music transfer
 - classic Sony Walkman sync
 - NW-S700 sync
@@ -388,17 +431,40 @@ Common related searches include:
 - NW-E300 sync
 - NW-E400 sync
 - NW-E500 sync
+- NW-E000 sync
+- NW-E010 sync
+- NW-S200 sync
+- NW-S610 sync
+- NW-S710 sync
 - NW-A600 sync
+- NW-A800 sync
+- NW-A1000 sync
+- NW-A3000 sync
+- NW-HD5 sync
+- NW-MS70D sync
+- NW-E405 transfer music
+- NW-E507 transfer music
+- NW-E005 transfer music
+- NW-E015 transfer music
+- NW-S205F transfer music
 - NW-S705F music transfer
 - NW-S706F music transfer
-- NW-S603 / NW-S605 / NW-S703F / NW-S705F / NW-S706F Walkman
+- NW-S715F music transfer
+- NW-S603 / NW-S605 / NW-S703F / NW-S705F / NW-S706F / NW-S715F / NW-S716F / NW-S718F Walkman
+- NW-E103 / NW-E105 / NW-E107 / NW-E403 / NW-E405 / NW-E407 / NW-E503 / NW-E505 / NW-E507 Walkman
+- NW-A605 / NW-A607 / NW-A608 / NW-A805 / NW-A806 / NW-A808 Walkman
+- NW-HD1 / NW-HD2 / NW-HD3 / NW-HD5 Walkman
 - 索尼 Walkman 传歌工具
 - 索尼 Walkman Mac 同步
 - 索尼 Walkman SonicStage 替代
+- 索尼 Walkman OpenMG 替代
 - 老索尼 Walkman 同步歌曲
+- 老索尼 Walkman 复制歌曲后不显示
+- 老索尼 Walkman 不能直接拖歌
 - OMGAUDIO 曲库同步
 - Sony Walkman 同期化 Mac
 - SonicStage 代替 Mac
+- SonicStage の代替 Mac
 
 ## Project status
 
