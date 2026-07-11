@@ -6,7 +6,7 @@ It is meant to restore the basic music-syncing workflow that used to depend on S
 
 ManicStage is **not** a general-purpose music player. It is **not** a modern Walkman manager. Its first target is SonicStage-era Sony `OMGAUDIO` Walkman devices that have been verified or can be safely tested with a full backup.
 
-## Important: back up your Walkman first
+## Important!!! Back up your Walkman first!!!
 
 Before using ManicStage for the first time, back up the entire USB root directory of your Walkman to your computer.
 
@@ -15,6 +15,8 @@ Do not back up only the `OMGAUDIO` folder. Copy the whole mounted Walkman volume
 For example, if your Walkman appears as a mounted USB drive in Finder, copy everything from that drive into a safe folder on your Mac before initializing, importing, deleting, or syncing music with ManicStage.
 
 This matters because older `OMGAUDIO` devices rely on multiple database files, indexes, search trees, and cached metadata. A full backup gives you a way to restore the original device state if something goes wrong.
+
+> **After making a full backup, follow the [First-time usage](#first-time-usage) section below for your first setup and sync.**
 
 ## System requirements
 
