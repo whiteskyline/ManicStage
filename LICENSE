@@ -1,0 +1,42 @@
+ManicStage Proprietary Notice
+
+Copyright (c) 2026 Ming Lin / whiteskyline.
+All rights reserved.
+
+ManicStage is distributed as a public test build for personal use with
+compatible Sony Walkman devices.
+
+You may:
+
+- Download official ManicStage release packages from the official repository.
+- Install and use an unmodified official ManicStage build for personal,
+  non-commercial use.
+- Link to the official repository or official release page.
+
+You may not, without prior written permission:
+
+- Redistribute ManicStage release packages, DMG files, ZIP files, app bundles,
+  executable binaries, helper binaries, bundled templates, UI resources, images,
+  payment/contact QR codes, integrity/signature files, or any extracted app
+  contents.
+- Repackage, mirror, or re-upload ManicStage binaries or resources to another
+  repository, website, file host, app store, or distribution channel.
+- Publish unpacked `ManicStage.app` contents, including files under
+  `ManicStage.app/Contents`.
+- Modify ManicStage binaries or resources and distribute the modified result.
+- Use the ManicStage name, icon, screenshots, payment/contact QR codes, or other
+  project assets in a way that suggests an unofficial build is official.
+- Remove or alter copyright, license, integrity, signature, or attribution
+  notices.
+
+This repository does not grant a license to reverse engineer, decompile,
+disassemble, bypass integrity checks, or derive source code from ManicStage
+binaries, except where such a restriction is not permitted by applicable law.
+
+Third-party software, tools, or libraries referenced by ManicStage remain under
+their own licenses. This notice applies only to ManicStage and its project-owned
+packages, binaries, resources, documentation, images, and assets.
+
+For permission requests, contact:
+
+ming.horizon@icloud.com

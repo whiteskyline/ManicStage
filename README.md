@@ -6,6 +6,14 @@ It is meant to restore the basic music-syncing workflow that used to depend on S
 
 ManicStage is **not** a general-purpose music player. It is **not** a modern Walkman manager. Its first target is SonicStage-era Sony `OMGAUDIO` Walkman devices that have been verified or can be safely tested with a full backup.
 
+## License and redistribution
+
+ManicStage is provided as an official public test build for personal use only. See [LICENSE](LICENSE) for the full proprietary notice.
+
+You may download and use unmodified official release packages from this repository. You may not redistribute, mirror, repackage, or re-upload ManicStage DMG files, ZIP files, app bundles, executable binaries, helper binaries, bundled templates, UI resources, images, payment/contact QR codes, integrity/signature files, or extracted `ManicStage.app/Contents` files without prior written permission.
+
+Unofficial builds, unpacked app bundles, copied binaries, and modified resources are not authorized releases.
+
 ## Important!!! Back up your Walkman first!!!
 
 Before using ManicStage for the first time, back up the entire USB root directory of your Walkman to your computer.
