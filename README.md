@@ -1,10 +1,47 @@
-# ManicStage
+# ManicStage - Sony Walkman sync for macOS
 
-ManicStage is a native macOS app for syncing music to older Sony Walkman devices that use the `OMGAUDIO` library structure, including verified S, E, and A series SonicStage-era devices.
+ManicStage is a native macOS music sync app for older Sony Walkman players that use the `OMGAUDIO` library structure. It is designed as a modern Mac workflow for SonicStage-era Walkman devices, including Sony NW-S600, NW-S700, NW-E300, NW-E400, NW-E500, and NW-A600 series players.
 
-It is meant to restore the basic music-syncing workflow that used to depend on SonicStage, while running on modern macOS.
+If you are looking for a SonicStage alternative for Mac, a Sony Walkman `OMGAUDIO` manager, or a way to import and delete music on classic Sony Walkman devices from macOS, ManicStage is built for that specific problem.
 
-ManicStage is **not** a general-purpose music player. It is **not** a modern Walkman manager. Its first target is SonicStage-era Sony `OMGAUDIO` Walkman devices that have been verified or can be safely tested with a full backup.
+ManicStage is **not** a general-purpose music player. It is **not** a modern Walkman manager. It is not affiliated with Sony. Its first target is SonicStage-era Sony `OMGAUDIO` Walkman devices that have been verified or can be safely tested with a full backup.
+
+## For people searching for a Walkman sync tool
+
+ManicStage may be useful if you are searching for:
+
+- Sony Walkman sync tool for macOS
+- SonicStage alternative for Mac
+- SonicStage replacement for Sony Walkman
+- Sony Walkman music transfer app
+- Sony Walkman `OMGAUDIO` manager
+- Sony NW-S705F / NW-S706F / NW-S700 music sync
+- Sony NW-E300 / NW-E400 / NW-E500 music transfer
+- Sony NW-A600 Walkman sync for Mac
+- Import music to old Sony Walkman without SonicStage
+- Delete songs from SonicStage-era Walkman on Mac
+- 索尼 Walkman 同步工具
+- SonicStage 替代工具
+- Mac 上给索尼 Walkman 传歌
+- 老索尼 Walkman 导入音乐
+
+## What it helps with
+
+- Sync music to classic Sony Walkman players on macOS, including S, E, and A series SonicStage-era devices.
+- Replace the basic music-transfer workflow that used to require SonicStage.
+- Read the existing Walkman music library, including songs, albums, artists, and covers.
+- Import local music files and preserve compatible MP3 audio when possible.
+- Delete songs from the Walkman and update the required `OMGAUDIO` database files.
+- Initialize an empty usable Walkman library after device-side formatting.
+
+## Quick links
+
+- [Important backup warning](#important-back-up-your-walkman-first)
+- [Supported Sony Walkman devices](#device-support)
+- [Installation](#installation)
+- [First-time usage](#first-time-usage)
+- [Audio import strategy](#audio-import-strategy)
+- [Troubleshooting](#troubleshooting)
 
 ## License and redistribution
 
@@ -39,12 +76,12 @@ ManicStage primarily targets Sony Walkman devices that use the `OMGAUDIO` music 
 
 Verified devices:
 
-- NW-S700 series
-- NW-S600 series
-- NW-E300 series
-- NW-E400 series
-- NW-E500 series
-- NW-A600 series
+- Sony Walkman NW-S700 series, including S705 / S705F / S706 / S706F / S703F-style devices
+- Sony Walkman NW-S600 series
+- Sony Walkman NW-E300 series
+- Sony Walkman NW-E400 series
+- Sony Walkman NW-E500 series
+- Sony Walkman NW-A600 series
 
 Other Sony Walkman devices that require SonicStage for music syncing are theoretically supported, but they should be treated as unverified until tested.
 
@@ -57,6 +94,16 @@ If you try ManicStage with another `OMGAUDIO` Walkman, please report:
 - Whether the device was detected
 - Whether import, delete, sync, playback, search, and cover display worked
 - Whether the device entered Simple Mode
+
+### Compatibility at a glance
+
+| Device family | Status | Notes |
+| --- | --- | --- |
+| Sony NW-S700 / NW-S600 Walkman | Verified | Main target for ManicStage. Tested around S705-era `OMGAUDIO` behavior. |
+| Sony NW-E300 / NW-E400 / NW-E500 Walkman | Verified | SonicStage-era devices using compatible `OMGAUDIO` library data. |
+| Sony NW-A600 Walkman | Verified | Uses the same general `OMGAUDIO` sync family. |
+| Other SonicStage-era `OMGAUDIO` Walkman models | Experimental | Full device backup required before testing. |
+| Modern Android / drag-and-drop Walkman models | Not a target | Use the normal file-transfer workflow instead. |
 
 
 ## What ManicStage does
@@ -73,6 +120,18 @@ ManicStage provides a modern macOS workflow for older Sony Walkman devices:
 - Preserve compatible MP3 audio when possible instead of re-encoding it.
 - Maintain the library indexes, search trees, and cover cache required by S705-era devices.
 - Use the user's local FFmpeg / FFprobe installation for audio probing, transcoding, metadata migration, and cover handling when needed.
+
+## ManicStage vs SonicStage
+
+SonicStage was Sony's original music management software for many older Walkman players, but it is difficult to use on modern Macs and often requires an old Windows installation or a virtual machine.
+
+ManicStage does not try to clone every SonicStage feature. Instead, it focuses on the daily tasks that make these old Walkman players usable again:
+
+- Import music from macOS to a SonicStage-era Walkman.
+- Delete songs from the Walkman without opening SonicStage.
+- Rebuild and update the `OMGAUDIO` library files required by the device.
+- Keep compatible MP3 files when possible, and transcode unsupported formats when needed.
+- Display the device library in a modern macOS app.
 
 ## Screenshots
 
@@ -304,6 +363,42 @@ The WeChat QR code is for contact, not payment.
 <p>
   <img src="assets/support/wechat-contact.jpg" alt="WeChat contact QR code" width="220">
 </p>
+
+## Related search phrases and model names
+
+ManicStage is intended for people looking for a Sony Walkman sync utility, a macOS music transfer app for old Walkman players, or a SonicStage-era `OMGAUDIO` library manager.
+
+Common related searches include:
+
+- Sony Walkman sync app
+- Sony Walkman sync software
+- Sony Walkman transfer tool
+- Sony Walkman music manager for Mac
+- Sony Walkman Mac music transfer
+- Sony Walkman SonicStage alternative
+- SonicStage alternative macOS
+- SonicStage replacement Mac
+- SonicStage not working on modern macOS
+- OMGAUDIO sync tool
+- OMGAUDIO database manager
+- old Sony Walkman music transfer
+- classic Sony Walkman sync
+- NW-S700 sync
+- NW-S600 sync
+- NW-E300 sync
+- NW-E400 sync
+- NW-E500 sync
+- NW-A600 sync
+- NW-S705F music transfer
+- NW-S706F music transfer
+- NW-S603 / NW-S605 / NW-S703F / NW-S705F / NW-S706F Walkman
+- 索尼 Walkman 传歌工具
+- 索尼 Walkman Mac 同步
+- 索尼 Walkman SonicStage 替代
+- 老索尼 Walkman 同步歌曲
+- OMGAUDIO 曲库同步
+- Sony Walkman 同期化 Mac
+- SonicStage 代替 Mac
 
 ## Project status
 
